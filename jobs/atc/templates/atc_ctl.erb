@@ -215,6 +215,30 @@ case $1 in
       <% p("riemann.tags").each do |k,v| %> \
       --metrics-attribute <%= esc(k) %>:<%= esc(v) %> \
       <% end %> \
+      <% if_p("external_sso.token_url") do |x| %> \
+      --external-auth-token-url <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.auth_url") do |x| %> \
+      --external-auth-auth-url <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.client_id") do |x| %> \
+      --external-auth-client-id <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.client_secret") do |x| %> \
+      --external-auth-client-secret <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.display_name") do |x| %> \
+      --external-auth-display-name <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.jwt_certificates_url") do |x| %> \
+      --external-jwt-certificates-url <%= esc(x) %> \
+      <% end %> \
+      <% if_p("external_sso.required_audience") do |x| %> \
+      --external-jwt-required-audience <%= esc(x) %> \
+      <% end %> \
+      <% if p("external_sso.auto_create_teams_based_on_jwt") %> \
+      --auto-create-teams-based-on-jwt \
+      <% end %> \
       --x-frame-options <%= esc(p("x_frame_options")) %> \
       <% if_p("credhub.url") do |url| %> \
       --credhub-url <%= esc(url) %> \

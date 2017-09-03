@@ -365,6 +365,46 @@ properties:
       Environment name to specify for errors emitted to Yeller.
     default: ""
 
+  external_sso.display_name:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.jwt_certificates_url:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.token_url:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.auth_url:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.required_audience:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.client_id:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.client_secret:
+    description: |
+      TODO
+    default: ""
+
+  external_sso.auto_create_teams_based_on_jwt:
+    description: |
+      TODO
+    default: false
+
   riemann.host:
     description: |
       If configured, detailed metrics will be emitted to the specified Riemann

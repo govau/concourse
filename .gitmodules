@@ -1,7 +1,7 @@
 [submodule "src/github.com/concourse/atc"]
 	path = src/github.com/concourse/atc
-	url = https://github.com/concourse/atc
-	branch = master
+	url = https://github.com/govau/atc
+	branch = externaljwt
 [submodule "src/github.com/lib/pq"]
 	path = src/github.com/lib/pq
 	url = https://github.com/lib/pq
@@ -103,8 +103,8 @@
 	url = https://github.com/kr/pty
 [submodule "src/github.com/concourse/fly"]
 	path = src/github.com/concourse/fly
-	url = https://github.com/concourse/fly
-	branch = master
+	url = https://github.com/govau/fly
+	branch = envtarget
 [submodule "src/github.com/tedsuo/rata"]
 	path = src/github.com/tedsuo/rata
 	url = https://github.com/tedsuo/rata
